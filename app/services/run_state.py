@@ -1,0 +1,20 @@
+from enum import Enum
+
+
+class RunStatus(str, Enum):
+    PENDING = "PENDING"
+    RUNNING = "RUNNING"
+    SUCCESS = "SUCCESS"
+    FAILED = "FAILED"
+    CANCELED = "CANCELED"
+
+
+class RunErrorCode(str, Enum):
+    NONE = "NONE"
+    TIMEOUT = "TIMEOUT"
+    CANCELED = "CANCELED"
+    SOURCE_BUSY = "SOURCE_BUSY"
+    VALIDATION_FAILED = "VALIDATION_FAILED"
+    STORAGE_FAILED = "STORAGE_FAILED"
+    ADAPTER_ERROR = "ADAPTER_ERROR"
+    UNKNOWN = "UNKNOWN"

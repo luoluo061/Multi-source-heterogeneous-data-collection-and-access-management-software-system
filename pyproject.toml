@@ -8,5 +8,10 @@ dependencies = [
   "fastapi",
   "uvicorn",
   "sqlalchemy",
-  "pydantic"
+  "pydantic",
+  "pydantic-settings",
+  "httpx",
+  "pytest"
 ]
+[tool.setuptools]
+packages = ["app"]
